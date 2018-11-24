@@ -72,5 +72,5 @@ int * makeSmallBucket(int myArr[], int size) {
 	}
 
 	return newArr;
-	
+
 }

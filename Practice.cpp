@@ -1,8 +1,16 @@
 #include <iostream>
 using namespace std;
 
+void showStatic();
+
 int main(){
-	cout << "Hello World!" << endl;
-	cout << "New Change"
+	for ( int count = 0; count < 5; count++ ){
+		showStatic();
+	}
 	return 0;
+}
+void showStatic(){
+	static int numCalls = 0;
+
+	cout << "This function has been called " << ++numCalls << " times. " << endl;
 }
